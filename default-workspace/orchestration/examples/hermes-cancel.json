@@ -1,0 +1,17 @@
+{
+  "summary": "Hermes cancel path test",
+  "working_directory": "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration\\real-verify\\project5",
+  "allowed_paths": [],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-c",
+      "import sys; sys.exit(0)"
+    ]
+  ],
+  "timeout_seconds": 30,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": true,
+  "idempotency_key": "hermes-cancel-20261024-01"
+}

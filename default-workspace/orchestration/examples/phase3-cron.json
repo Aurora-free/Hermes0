@@ -1,0 +1,18 @@
+{
+  "summary": "Isolated real-failure test: implement cron next-run with DOM/DOW OR semantics",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase3-cron",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase3-cron"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase3-harness\\cron_acceptance.py"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": false,
+  "idempotency_key": "phase3-cron-real-failure-20261024-01"
+}

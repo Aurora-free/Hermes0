@@ -1,0 +1,20 @@
+{
+  "summary": "Implement exprc.py (pexpr compiler + stack VM) per SPEC_EXPRC.md so that tests/test_exprc.py passes (112 tests: pinned bytecode encodings, value semantics, exact error messages, hand-built VM programs, source constraints). The module must be standalone from scratch: no eval/exec calls, no ast or pexpr imports. Do NOT modify tests/ or SPEC_EXPRC.md.",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-exprc",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-exprc"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_exprc"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": false,
+  "idempotency_key": "phase9-exprc-closed-loop-20261025-01"
+}

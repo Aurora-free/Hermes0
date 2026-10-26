@@ -1,0 +1,20 @@
+{
+ "summary": "Implement the five tool-group functions in exprc.py per SPEC_EXPRC.md 'Tool groups': disasm(program), trace(program, env, limit), minify(program), pack(program), unpack(data). The core (compile/run, 112 pinned tests) is already complete and green - do NOT regress it. Current state: 113 of 171 tests pass; 58 fail because the five functions raise NotImplementedError. All semantics are pinned in SPEC_EXPRC.md and tests/test_exprc.py (pinned disasm lines, pinned trace step lists incl. limit/error rules, pinned minify two-step optimizer, pinned pack/unpack wire bytes with exact error messages). Standard library only; no eval/exec, no ast/pexpr imports. Do NOT modify tests/ or SPEC_EXPRC.md. Goal: all 171 tests green.",
+ "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-exprc",
+ "allowed_paths": [
+  "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-exprc"
+ ],
+ "acceptance_commands": [
+  [
+   "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+   "-m",
+   "unittest",
+   "tests.test_exprc"
+  ]
+ ],
+ "timeout_seconds": 600,
+ "risk_level": "low",
+ "executor": "opencode",
+ "read_only": false,
+ "idempotency_key": "phase9-exprc-tools-closed-loop-20261025-02"
+}

@@ -1,0 +1,20 @@
+{
+ "summary": "exprc.py (pexpr compiler + stack VM + tool groups) is nearly complete but ships with multiple subtle defects: 37 of 223 tests in tests/test_exprc.py currently fail, spread across the core run loop, disasm, trace, minify, and pack/unpack. The defects are off-by-one / type-coercion class errors, not missing functionality. SPEC_EXPRC.md and tests/test_exprc.py pin the exact required behavior (pinned bytecode, exact error messages, pinned disasm lines, pinned trace step lists, pinned optimizer results, pinned wire bytes). Diagnose and repair exprc.py until ALL 223 tests pass. Do NOT modify tests/ or SPEC_EXPRC.md. Standard library only; no eval/exec, no ast or pexpr imports. Keep the existing structure; minimal-diff repairs are preferred.",
+ "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-exprc-repair",
+ "allowed_paths": [
+  "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-exprc-repair"
+ ],
+ "acceptance_commands": [
+  [
+   "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+   "-m",
+   "unittest",
+   "tests.test_exprc"
+  ]
+ ],
+ "timeout_seconds": 900,
+ "risk_level": "low",
+ "executor": "opencode",
+ "read_only": false,
+ "idempotency_key": "phase9-exprc-repair-closed-loop-20261025-01"
+}

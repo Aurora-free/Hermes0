@@ -1,0 +1,21 @@
+{
+  "summary": "Implement diff3_merge in d3.py per SPEC_DIFF3.md so the full acceptance suite (39 tests) passes; the 22 existing diff/apply tests must keep passing; do not modify tests/test_d3.py or SPEC_DIFF3.md",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-diff",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-diff"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_d3",
+      "-v"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": false,
+  "idempotency_key": "phase9-diff3-real-repair-20261025-01"
+}

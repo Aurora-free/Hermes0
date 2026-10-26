@@ -1,0 +1,16 @@
+{
+  "summary": "Read-only: list top-level files and report hello.txt contents",
+  "working_directory": "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration\\real-verify\\project",
+  "allowed_paths": [],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-c",
+      "import pathlib; p=pathlib.Path('hello.txt'); raise SystemExit(0 if p.exists() and 'ORCHESTRATOR_READ_OK' in p.read_text() else 1)"
+    ]
+  ],
+  "timeout_seconds": 180,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": true
+}

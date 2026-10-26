@@ -1,0 +1,25 @@
+{
+  "migrated_at": "2026-10-24T20:43:42+08:00",
+  "source": "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration",
+  "dest": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\runtime",
+  "counts_before": {
+    "tasks": 5,
+    "attempts": 18,
+    "events": 59,
+    "budget": 10
+  },
+  "counts_after": {
+    "tasks": 5,
+    "attempts": 18,
+    "events": 59,
+    "budget": 10
+  },
+  "file_counts": {
+    "tasks": 45,
+    "results": 5,
+    "logs": 48,
+    "snapshots": 0
+  },
+  "source_preserved": true,
+  "note": "Source directory is preserved unchanged as a backup. New runtime data uses dest."
+}

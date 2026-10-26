@@ -1,0 +1,44 @@
+{
+  "summary": "Implement the two stub modules sched.py (run_scheduler per SPEC_SCHED.md) and windows.py (aggregate_windows per SPEC_WINDOWS.md) so tests/test_sched.py and tests/test_windows.py pass; the existing suites tests/test_d3.py, tests/test_jp.py, tests/test_pexpr.py must keep passing; do NOT modify any file in tests/, any SPEC_*.md, or the already-implemented d3.py, jp.py, pexpr.py",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-diff",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-diff"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_d3"
+    ],
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_jp"
+    ],
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_pexpr"
+    ],
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_sched"
+    ],
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_windows"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": false,
+  "idempotency_key": "phase9-schedwin-real-repair-20261025-01"
+}

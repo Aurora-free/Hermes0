@@ -1,0 +1,35 @@
+{
+  "summary": "Hermes escalation: OpenCode failures, real expert analysis and takeover",
+  "working_directory": "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration\\real-verify\\project7",
+  "allowed_paths": [
+    "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration\\real-verify\\project7"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-c",
+      "import calc; raise SystemExit(0 if calc.add(2,3)==5 else 1)"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "simulated",
+  "read_only": false,
+  "idempotency_key": "hermes-escalation-20261024-01",
+  "simulation": {
+    "opencode_attempts": [
+      {
+        "exit_code": 1,
+        "stderr": "AssertionError: add(2,3) != 5 (controlled attempt 1)"
+      },
+      {
+        "exit_code": 1,
+        "stderr": "AssertionError: add(2,3) != 5 (controlled attempt 2)"
+      },
+      {
+        "exit_code": 1,
+        "stderr": "AssertionError: expert plan not applied (controlled attempt 3)"
+      }
+    ]
+  }
+}

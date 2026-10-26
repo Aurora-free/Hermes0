@@ -1,0 +1,18 @@
+{
+  "summary": "Isolated real-failure test: implement RFC 6902 JSON Patch from scratch",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase3-jsonpatch",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase3-jsonpatch"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase3-harness\\jsonpatch_acceptance.py"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": false,
+  "idempotency_key": "phase3-jsonpatch-real-failure-20261024-01"
+}

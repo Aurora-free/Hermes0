@@ -1,0 +1,21 @@
+{
+  "summary": "Implement d3.py from scratch per the module docstring spec: replace both NotImplementedError stubs (diff_lines, apply_diff) so the acceptance suite passes; do not modify tests/test_d3.py; no stdlib diff helpers, no subprocess",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-diff",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase9-diff"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_d3",
+      "-v"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": false,
+  "idempotency_key": "phase9-diff-real-repair-20261025-01"
+}

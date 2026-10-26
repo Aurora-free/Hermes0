@@ -1,0 +1,21 @@
+{
+  "summary": "Fix timezone-aware cron next_run; tests in tests/test_cron.py must pass; do not modify tests",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase5-dst-cron",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase5-dst-cron"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-m",
+      "unittest",
+      "tests.test_cron",
+      "-v"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": false,
+  "idempotency_key": "phase5-dst-cron-real-repair-20261024-01"
+}

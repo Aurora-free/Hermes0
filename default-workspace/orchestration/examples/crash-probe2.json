@@ -1,0 +1,27 @@
+{
+  "summary": "Crash probe 2: kill after claim",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\crash-test2",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\crash-test2"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-c",
+      "import sys; sys.exit(0)"
+    ]
+  ],
+  "timeout_seconds": 90,
+  "risk_level": "low",
+  "executor": "simulated",
+  "read_only": false,
+  "simulation": {
+    "opencode_attempts": [
+      {
+        "exit_code": 0,
+        "sleep_seconds": 45
+      }
+    ]
+  },
+  "idempotency_key": "crash-probe-20261024-02"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "Expert takeover v2: fix add() and verify acceptance",
+  "working_directory": "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration\\real-verify\\project4",
+  "allowed_paths": [
+    "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration\\real-verify\\project4"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-c",
+      "import calc; raise SystemExit(0 if calc.add(2,3)==5 else 1)"
+    ]
+  ],
+  "timeout_seconds": 300,
+  "risk_level": "low",
+  "executor": "simulated",
+  "read_only": false,
+  "simulation": {
+    "opencode_attempts": [
+      {
+        "exit_code": 1,
+        "stderr": "AssertionError: add(2,3) != 5 (attempt 1)"
+      },
+      {
+        "exit_code": 1,
+        "stderr": "AssertionError: add(2,3) != 5 (attempt 2)"
+      },
+      {
+        "exit_code": 1,
+        "stderr": "AssertionError: expert plan not applied"
+      }
+    ]
+  }
+}

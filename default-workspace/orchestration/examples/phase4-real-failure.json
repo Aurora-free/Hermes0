@@ -1,0 +1,18 @@
+{
+  "summary": "Real OpenCode failure: unsatisfiable acceptance must end blocked",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase4-real-failure",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase4-real-failure"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\phase4-harness\\acceptance.py"
+    ]
+  ],
+  "timeout_seconds": 240,
+  "risk_level": "low",
+  "executor": "opencode",
+  "read_only": false,
+  "idempotency_key": "phase4-real-failure-20261024-01"
+}

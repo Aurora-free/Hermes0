@@ -1,0 +1,25 @@
+{
+  "summary": "High-risk approval gate test",
+  "working_directory": "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration\\real-verify\\approval",
+  "allowed_paths": [
+    "C:\\Users\\22649\\OneDrive\\文档\\deepseek-harness\\default-workspace\\orchestration\\real-verify\\approval"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-c",
+      "import pathlib; raise SystemExit(0 if pathlib.Path('keep.txt').exists() else 1)"
+    ]
+  ],
+  "timeout_seconds": 60,
+  "risk_level": "high",
+  "executor": "simulated",
+  "read_only": false,
+  "simulation": {
+    "opencode_attempts": [
+      {
+        "exit_code": 0
+      }
+    ]
+  }
+}

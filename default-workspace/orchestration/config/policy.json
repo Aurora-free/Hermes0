@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "runtime_root": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\runtime",
+  "hermes": {
+    "cli": "C:\\Users\\22649\\AppData\\Local\\hermes\\bin\\hermes.exe",
+    "kanban_tenant": "orchestrator",
+    "kanban_board": "default",
+    "timeout_seconds": 120
+  },
+  "limits": {
+    "max_opencode_attempts": 2,
+    "max_expert_analyses": 1,
+    "max_expert_takeovers": 1,
+    "max_total_attempts": 4,
+    "max_model_calls_per_task": 6,
+    "max_cost_usd_per_task": 0.5,
+    "assumed_cost_per_call_usd": 0.02,
+    "default_timeout_seconds": 300,
+    "max_output_bytes": 2000000,
+    "max_snapshot_files": 3000,
+    "max_snapshot_bytes": 80000000
+  },
+  "concurrency": {
+    "max_writing_tasks": 1
+  },
+  "expert": {
+    "enabled": true,
+    "mode": "dsh_headless",
+    "dsh_cli": "C:\\Users\\22649\\AppData\\Local\\Programs\\DeepSeek Harness\\resources\\runtime\\cli\\bin\\dsh.cmd",
+    "dsh_home": "C:\\Users\\22649\\.dsh",
+    "base_url": "https://api.deepseek.com/anthropic",
+    "timeout_seconds": 600
+  },
+  "opencode": {
+    "cli": "C:\\Users\\22649\\AppData\\Roaming\\ai.opencode.desktop\\cli\\2.1.3-x64\\opencode-cli.exe",
+    "model": "opencode/deepseek-v4.1-flash-free",
+    "home": "inherit",
+    "extra_args": [
+      "--standalone",
+      "--auto",
+      "--format",
+      "json"
+    ]
+  },
+  "telegram": {
+    "enabled": false,
+    "dry_run": true,
+    "authorized": false,
+    "transport": "hermes_send",
+    "allowed_chat_id": null,
+    "allowed_chat_id_env": "TELEGRAM_CHAT_ID",
+    "token_env": "TELEGRAM_BOT_TOKEN",
+    "env_file": "C:\\Users\\22649\\AppData\\Local\\hermes\\.env"
+  },
+  "paths": {
+    "exclude_dirs": [
+      ".git",
+      "node_modules",
+      ".venv",
+      "__pycache__",
+      ".pytest_cache",
+      "dist",
+      "build"
+    ],
+    "text_patch_suffixes": [
+      ".py",
+      ".js",
+      ".ts",
+      ".json",
+      ".md",
+      ".txt",
+      ".yaml",
+      ".yml",
+      ".ps1",
+      ".cmd",
+      ".html",
+      ".css"
+    ]
+  },
+  "secrets": {
+    "env_file": "C:\\Users\\22649\\AppData\\Local\\hermes\\.env"
+  },
+  "rate_limit": {
+    "min_interval_seconds": 8,
+    "retry_on_rate_limit": true,
+    "max_rate_retries": 3,
+    "backoff_base_seconds": 90,
+    "backoff_max_seconds": 300
+  }
+}

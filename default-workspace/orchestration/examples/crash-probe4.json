@@ -1,0 +1,27 @@
+{
+  "summary": "Crash probe 4: kill after link",
+  "working_directory": "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\crash-test4",
+  "allowed_paths": [
+    "C:\\Users\\22649\\AppData\\Local\\HermesOrchestrator\\test-projects\\crash-test4"
+  ],
+  "acceptance_commands": [
+    [
+      "C:\\Users\\22649\\.dsh\\dsh-runtimes\\dsh-primary-runtime\\dependencies\\python\\python.exe",
+      "-c",
+      "import sys; sys.exit(0)"
+    ]
+  ],
+  "timeout_seconds": 120,
+  "risk_level": "low",
+  "executor": "simulated",
+  "read_only": false,
+  "simulation": {
+    "opencode_attempts": [
+      {
+        "exit_code": 0,
+        "sleep_seconds": 60
+      }
+    ]
+  },
+  "idempotency_key": "crash-probe-20261024-04"
+}
